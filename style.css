@@ -380,13 +380,21 @@ a:hover::after {
   padding: 20px 0;
 }
 
+.experience-project_item-container {
+  flex: none;
+  margin-right: 22px;
+}
+
+.experience-project_item-container a::after {
+  content: none;
+}
+
 .experience-projects_item {
   background: #cceff5;
   border-radius: 27px;
   padding: 22px;
   width: 275px;
-  flex: none;
-  margin-right: 22px;
+  height: 600px;
   transition: all 0.33s ease-in-out;
 }
 
