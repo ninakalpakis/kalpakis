@@ -355,11 +355,12 @@ a:hover::after {
 }
 
 #experience {
-  margin: 100px 0 22px 22px;
+  margin: 100px 0 22px 0px;
 }
 
 #experience h3 {
   color: #46467f;
+  margin-left: 22px;
 }
 
 #experience h4 {
@@ -371,6 +372,7 @@ a:hover::after {
   line-height: 26px;
   font-weight: 500;
   margin-right: 22px;
+  margin-left: 22px;
 }
 
 .experience-projects {
@@ -406,6 +408,10 @@ a:hover::after {
   height: 275px;
 }
 
+.experience-projects_item-imageContainer:first-child {
+  margin-left: 22px;
+}
+
 .experience-projects_item-imageContainer::after {
   content: "";
   position: absolute;
@@ -417,10 +423,6 @@ a:hover::after {
   top: 0;
   opacity: 0.7;
   transition: all 0.33s ease-in-out;
-}
-
-.experience-projects_item:hover {
-  box-shadow: 5px 5px 20px 3px #6667ab;
 }
 
 .experience-projects_item:hover
@@ -686,7 +688,19 @@ a:hover::after {
     transform: translate(50%, -50%);
   }
   #experience {
-    margin: 100px 0 50px 100px;
+    margin: 100px 0 50px 0px;
+  }
+  #experience h3 {
+    margin-left: 100px;
+  }
+  #experience h4 {
+    margin-left: 100px;
+  }
+  .experience-projects_item-imageContainer:first-child {
+    margin-left: 100px;
+  }
+  .experience-projects_item:hover {
+    box-shadow: 5px 5px 20px 3px #6667ab;
   }
   #contact {
     padding: 100px 100px;
@@ -708,7 +722,16 @@ a:hover::after {
     margin: 100px 200px;
   }
   #experience {
-    margin: 100px 0 50px 200px;
+    margin: 100px 0 50px 0px;
+  }
+  #experience h3 {
+    margin-left: 200px;
+  }
+  #experience h4 {
+    margin-left: 200px;
+  }
+  .experience-projects_item-imageContainer:first-child {
+    margin-left: 200px;
   }
   #contact {
     padding: 100px 200px;
