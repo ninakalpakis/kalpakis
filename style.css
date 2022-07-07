@@ -144,6 +144,10 @@ nav li a:hover {
   color: #6667ab;
 }
 
+#desktop-nav {
+  display: none;
+}
+
 .fancy-button {
   /* border: 2px solid #46467f; */
   background-color: transparent;
@@ -279,7 +283,7 @@ a {
 a::after {
   content: "";
   background: #cceff5;
-  height: 1px;
+  height: 3px;
   width: 0%;
   position: absolute;
   bottom: -2px;
@@ -592,6 +596,10 @@ a:hover::after {
   font-weight: 500;
 }
 
+#contact p {
+  font-size: 14px;
+}
+
 .contact-info {
   display: flex;
   justify-content: flex-end;
@@ -644,6 +652,44 @@ a:hover::after {
 }
 
 @media screen and (min-width: 992px) {
+  #sidecar {
+    display: none;
+  }
+  #desktop-nav {
+    display: flex;
+    transition: all 0.33s ease-in-out;
+  }
+  .hidden {
+    transform: translateY(-100%);
+    transition: all 0.33s ease-in-out;
+  }
+  #desktop-nav nav {
+    display: flex;
+    flex-direction: row;
+    background: #46467f;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 100px;
+    transition: all 0.33s ease-in-out;
+  }
+  #desktop-nav nav li a {
+    text-transform: uppercase;
+    font-family: "Epilogue";
+    color: #cceff5;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 30px;
+    transition: all 0.33s ease-in-out;
+    text-decoration: none;
+  }
+  #desktop-nav nav li a:hover {
+    color: white;
+  }
   .hero-title {
     margin: 100px;
     margin-bottom: 50px;
@@ -711,6 +757,14 @@ a:hover::after {
 }
 
 @media screen and (min-width: 1200px) {
+  #desktop-nav nav {
+    padding-right: 200px;
+    transition: all 0.33s ease-in-out;
+  }
+  .hidden {
+    transform: translateY(-100%);
+    transition: all 0.33s ease-in-out;
+  }
   .hero-title {
     margin: 200px;
     margin-bottom: 50px;

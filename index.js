@@ -5,6 +5,17 @@ document.getElementById("menu").addEventListener("click", function () {
   el.classList.toggle("nav-bar-active");
 });
 
+// hidden nav upon scroll
+var prev = 0;
+var $window = $(window);
+var nav = $(".desktop-nav");
+
+$window.on("scroll", function () {
+  var scrollTop = $window.scrollTop();
+  nav.toggleClass("hidden", scrollTop > prev);
+  prev = scrollTop;
+});
+
 // confetti
 document.getElementById("joy").addEventListener("mouseover", function () {
   confetti({
@@ -17,16 +28,14 @@ document.getElementById("joy").addEventListener("mouseover", function () {
 });
 
 // accordion
-document.querySelector('.language').addEventListener("click", function () {
+document.querySelector(".language").addEventListener("click", function () {
   this.classList.toggle("tab-active");
 });
 
-document.querySelector('.tools').addEventListener("click", function () {
+document.querySelector(".tools").addEventListener("click", function () {
   this.classList.toggle("tab-active");
 });
 
-document.querySelector('.libraries').addEventListener("click", function () {
+document.querySelector(".libraries").addEventListener("click", function () {
   this.classList.toggle("tab-active");
 });
-
-
