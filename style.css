@@ -408,7 +408,7 @@ a:hover::after {
   height: 275px;
 }
 
-.experience-projects_item-imageContainer:first-child {
+.experience-project_item-container:first-child {
   margin-left: 22px;
 }
 
@@ -696,7 +696,7 @@ a:hover::after {
   #experience h4 {
     margin-left: 100px;
   }
-  .experience-projects_item-imageContainer:first-child {
+  .experience-project_item-container:first-child {
     margin-left: 100px;
   }
   .experience-projects_item:hover {
@@ -730,7 +730,7 @@ a:hover::after {
   #experience h4 {
     margin-left: 200px;
   }
-  .experience-projects_item-imageContainer:first-child {
+  .experience-project_item-container:first-child {
     margin-left: 200px;
   }
   #contact {
